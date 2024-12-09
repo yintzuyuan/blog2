@@ -1,65 +1,68 @@
-# The Site Configuration
+# 網站配置
 
-# Import the theme
+# 匯入主題
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# 網站語言 › https://www.lingoes.net/en/translator/langcode.htm
+# 若與 `_data/locales` 資料夾中的檔案名稱相同，版面語言也會一併更改
+# 否則版面語言將使用預設值 'en'
+lang: zh-TW
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+# 變更為您的時區 › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Asia/Taipei
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# jekyll-seo-tag 設定 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: 殷慈遠的字碼筆記 # 主標題
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 用程式碼雕琢文字之美 # 顯示為副標題
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- # 用於 SEO meta 標籤和 atom feed
+  分享字型設計、Python 開發和創意思考的數位筆記。
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+# 填入您網站的協定和網域名稱
+# 例如 'https://username.github.io'，注意結尾不要加 '/'
+url: "https://blog.erikyin.net"
 
 github:
-  username: github_username # change to your GitHub username
+  username: yintzuyuan # 更改為您的 GitHub 使用者名稱
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: # erikyin # 更改為您的 Twitter 使用者名稱
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  # 更改為您的全名
+  # 將顯示為文章的預設作者和頁尾的版權擁有者
+  name: 殷 慈遠
+  email: hi@erikyin.net # 更改為您的電子郵件地址
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    # 第一個元素作為版權擁有者的連結
+    - https://erikyin.net # 更改為您的個人網站
+    # - https://twitter.com/erikyin # 更改為您的 Twitter 主頁
+    - https://github.com/yintzuyuan # 更改為您的 GitHub 主頁
+    # 取消註釋以新增更多社群連結
+    - https://www.facebook.com/erikyin.net
+    - https://www.instagram.com/erikyin
+    - https://www.youtube.com/c/erikin1205_typogame
     # - https://www.linkedin.com/in/username
 
-# Site Verification Settings
+# 網站驗證設定
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google: # 填入您的 Google 驗證碼
+  bing: # 填入您的 Bing 驗證碼
+  alexa: # 填入您的 Alexa 驗證碼
+  yandex: # 填入您的 Yandex 驗證碼
+  baidu: # 填入您的百度驗證碼
+  facebook: # 填入您的 Facebook 驗證碼
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# jekyll-seo-tag 設定結束
 
-# Web Analytics Settings
+# 網頁分析設定
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-Y392C005ET # 填入您的 Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
