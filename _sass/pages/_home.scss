@@ -106,7 +106,7 @@
 
 .pagination {
   color: var(--text-color);
-  font-family: $font-family-base;
+  font-family: v.$font-family-base;
   justify-content: space-evenly;
 
   @include bp.lg {
