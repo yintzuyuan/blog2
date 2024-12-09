@@ -1,154 +1,121 @@
-/*
- * The syntax light mode typography colors
- */
-
 @mixin styles {
   /* Framework color */
-  --main-bg: rgb(245, 240, 229);
-  --mask-bg: rgb(217, 213, 206);
-  --main-border-color: rgb(230, 226, 217);
+  --main-bg: white;
+  --mask-bg: #c1c3c5;
+  --main-border-color: #f3f3f3;
 
   /* Common color */
-  --text-color: rgb(69, 66, 74);
-  --text-muted-color: #696664;
+  --text-color: #34343c;
+  --text-muted-color: #757575;
   --text-muted-highlight-color: inherit;
-  --heading-color: #45424a;
-  --label-color: #5d5a62;
-  --blockquote-border-color: #e6e2d9;
-  --blockquote-text-color: #696664;
-  --link-color: #45424a;
-  --link-underline-color: #d4d0c7;
-  --button-bg: rgb(245, 240, 229);
-  --btn-border-color: #e6e2d9;
-  --btn-backtotop-color: #696664;
-  --btn-backtotop-border-color: #e6e2d9;
-  --btn-box-shadow: #d4d0c7;
-  --checkbox-color: #c5c0b5;
-  --checkbox-checked-color: #45424a;
+  --heading-color: #2a2a2a;
+  --label-color: #585858;
+  --blockquote-border-color: #eeeeee;
+  --blockquote-text-color: #757575;
+  --link-color: #0056b2;
+  --link-underline-color: #dee2e6;
+  --button-bg: #ffffff;
+  --btn-border-color: #e9ecef;
+  --btn-backtotop-color: #686868;
+  --btn-backtotop-border-color: #f1f1f1;
+  --checkbox-color: #c5c5c5;
+  --checkbox-checked-color: #07a8f7;
   --img-bg: radial-gradient(
     circle,
-    rgb(245, 240, 229) 0%,
-    rgb(230, 226, 217) 100%
+    rgb(255, 255, 255) 0%,
+    rgb(239, 239, 239) 100%
   );
   --shimmer-bg: linear-gradient(
     90deg,
-    rgba(245, 240, 229, 0) 0%,
-    rgba(217, 213, 206, 1) 50%,
-    rgba(245, 240, 229, 0) 100%
+    rgba(250, 250, 250, 0) 0%,
+    rgba(232, 230, 230, 1) 50%,
+    rgba(250, 250, 250, 0) 100%
   );
 
   /* Sidebar */
-  --site-title-color: rgb(69, 66, 74);
-  --site-subtitle-color: #696664;
-  --sidebar-bg: rgb(245, 240, 229);
-  --sidebar-border-color: #e6e2d9;
-  --sidebar-muted-color: #5d5a62;
-  --sidebar-active-color: #28262c;
-  --sidebar-hover-bg: rgba(69, 66, 74, 0.1);
-  --sidebar-btn-bg: rgb(245, 240, 229);
-  --sidebar-btn-color: #8e8b94;
-  --avatar-border-color: rgb(245, 240, 229);
+  --site-title-color: rgb(113, 113, 113);
+  --site-subtitle-color: #717171;
+  --sidebar-bg: #f6f8fa;
+  --sidebar-border-color: #efefef;
+  --sidebar-muted-color: #545454;
+  --sidebar-active-color: #1d1d1d;
+  --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
+  --sidebar-btn-bg: white;
+  --sidebar-btn-color: #8e8e8e;
+  --avatar-border-color: white;
 
   /* Topbar */
-  --topbar-bg: rgba(245, 240, 229, 0.7);
-  --topbar-text-color: rgb(69, 66, 74);
-  --search-border-color: rgb(230, 226, 217);
-  --search-icon-color: #c5c0b5;
-  --input-focus-border-color: #b8b4ac;
+  --topbar-bg: rgb(255, 255, 255, 0.7);
+  --topbar-text-color: rgb(78, 78, 78);
+  --search-border-color: rgb(240, 240, 240);
+  --search-icon-color: #c2c6cc;
+  --input-focus-border-color: #b8b8b8;
 
   /* Home page */
-  --post-list-text-color: #696664;
-  --btn-patinator-text-color: #5d5a62;
+  --post-list-text-color: dimgray;
+  --btn-patinator-text-color: #555555;
   --btn-paginator-hover-color: var(--sidebar-bg);
 
   /* Posts */
-  --toc-highlight: #45424a;
-  --btn-share-color: #696664;
-  --btn-share-hover-color: #45424a;
-  --card-bg: rgb(245, 240, 229);
-  --card-header-bg: #e6e2d9;
-  --card-hovor-bg: #e6e2d9;
-  --card-shadow: rgba(69, 66, 74, 0.05) 0 2px 6px 0,
-    rgba(217, 213, 206, 0.15) 0 0 0 1px;
-  --footnote-target-bg: #e6e2d9;
-  --tb-odd-bg: #f7f5ee;
-  --tb-border-color: #e6e2d9;
-  --dash-color: #c5c0b5;
-  --kbd-wrap-color: #b8b4ac;
+  --toc-highlight: #0550ae;
+  --toc-popup-border-color: lightgray;
+  --btn-share-color: gray;
+  --btn-share-hover-color: #0d6efd;
+  --card-bg: white;
+  --card-hovor-bg: #e2e2e2;
+  --card-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0,
+    rgba(211, 209, 209, 0.15) 0 0 0 1px;
+  --footnote-target-bg: lightcyan;
+  --tb-odd-bg: #fbfcfd;
+  --tb-border-color: #eaeaea;
+  --dash-color: silver;
+  --kbd-wrap-color: #bdbdbd;
   --kbd-text-color: var(--text-color);
-  --kbd-bg-color: rgb(245, 240, 229);
-  --prompt-text-color: rgba(69, 66, 74, 0.77);
-  --prompt-tip-bg: rgba(69, 66, 74, 0.1);
-  --prompt-tip-icon-color: #45424a;
-  --prompt-info-bg: #f7f5ee;
-  --prompt-info-icon-color: #696664;
-  --prompt-warning-bg: rgba(217, 213, 206, 0.5);
-  --prompt-warning-icon-color: #8e8b94;
-  --prompt-danger-bg: rgba(217, 213, 206, 0.3);
-  --prompt-danger-icon-color: #696664;
+  --kbd-bg-color: white;
+  --prompt-text-color: rgb(46, 46, 46, 0.77);
+  --prompt-tip-bg: rgb(123, 247, 144, 0.2);
+  --prompt-tip-icon-color: #03b303;
+  --prompt-info-bg: #e1f5fe;
+  --prompt-info-icon-color: #0070cb;
+  --prompt-warning-bg: rgb(255, 243, 205);
+  --prompt-warning-icon-color: #ef9c03;
+  --prompt-danger-bg: rgb(248, 215, 218, 0.56);
+  --prompt-danger-icon-color: #df3c30;
 
   /* Tags */
-  --tag-border: #e6e2d9;
+  --tag-border: #dee2e6;
   --tag-shadow: var(--btn-border-color);
-  --tag-hover: #d4d0c7;
-  --search-tag-bg: #f7f5ee;
+  --tag-hover: rgb(222, 226, 230);
+  --search-tag-bg: #f8f9fa;
 
   /* Categories */
-  --categories-border: rgba(69, 66, 74, 0.125);
+  --categories-border: rgba(0, 0, 0, 0.125);
   --categories-hover-bg: var(--btn-border-color);
-  --categories-icon-hover-color: #45424a;
-
-  .categories.card,
-  .list-group-item {
-    background-color: var(--card-bg);
-  }
-
-  .categories {
-    .card-header {
-      background-color: var(--card-header-bg);
-    }
-
-    .list-group-item {
-      border-left: none;
-      border-right: none;
-      padding-left: 2rem;
-      border-color: var(--categories-border);
-
-      &:last-child {
-        border-bottom-color: var(--card-bg);
-      }
-    }
-  }
-
-  #archives li:nth-child(odd) {
-    background-image: linear-gradient(
-      to left,
-      rgb(245, 240, 229),
-      rgba(255, 255, 255, 0.5),
-      rgb(245, 240, 229)
-    );
-  }
+  --categories-icon-hover-color: darkslategray;
 
   /* Archive */
-  --timeline-color: rgba(69, 66, 74, 0.075);
-  --timeline-node-bg: #c5c0b5;
-  --timeline-year-dot-color: rgb(245, 240, 229);
+  --timeline-color: rgba(0, 0, 0, 0.075);
+  --timeline-node-bg: #c2c6cc;
+  --timeline-year-dot-color: #ffffff;
+
+  /* --- Custom code light mode colors --- */
+  --language-border-color: #ececec;
+  --highlight-bg-color: #f6f8fa;
+  --highlighter-rouge-color: #3f596f;
+  --highlight-lineno-color: #9e9e9e;
+  --inline-code-bg: rgba(25, 25, 28, 0.05);
+  --code-color: #3a3a3a;
+  --code-header-text-color: #a3a3a3;
+  --code-header-muted-color: #e5e5e5;
+  --code-header-icon-color: #c9c8c8;
+  --clipboard-checked-color: #43c743;
 
   [class^='prompt-'] {
-    --link-underline-color: rgb(217, 213, 206);
+    --link-underline-color: rgb(219, 216, 216);
   }
 
   .dark {
     display: none;
-  }
-
-  #archives li:nth-child(odd) {
-    background-image: linear-gradient(
-      to left,
-      rgb(245, 240, 229),
-      rgba(255, 255, 255, 0.5),
-      rgb(245, 240, 229)
-    );
   }
 
   /* --- Syntax highlight theme from `rougify style github` --- */
@@ -163,8 +130,8 @@
 
   .highlight,
   .highlight .w {
-    color: rgb(69, 66, 74);
-    background-color: rgb(245, 240, 229);
+    color: #24292f;
+    background-color: #f6f8fa;
   }
 
   .highlight .k,
@@ -174,53 +141,53 @@
   .highlight .kr,
   .highlight .kt,
   .highlight .kv {
-    color: #a44a81; // 紫色用於關鍵字
+    color: #cf222e;
   }
 
   .highlight .gr {
-    color: rgb(245, 240, 229);
+    color: #f6f8fa;
   }
 
   .highlight .gd {
-    color: #b31d28; // 紅色用於刪除
-    background-color: #ffeef0;
+    color: #82071e;
+    background-color: #ffebe9;
   }
 
   .highlight .nb {
-    color: #702c00; // 深橙色用於內建
+    color: #953800;
   }
 
   .highlight .nc {
-    color: #6f42c1; // 紫色用於類名
+    color: #953800;
   }
 
   .highlight .no {
-    color: #702c00; // 深橙色用於常量
+    color: #953800;
   }
 
   .highlight .nn {
-    color: #6f42c1; // 紫色用於命名空間
+    color: #953800;
   }
 
   .highlight .sr {
-    color: #22863a; // 綠色用於正則
+    color: #116329;
   }
 
   .highlight .na {
-    color: #24292e; // 深灰色用於屬性名
+    color: #116329;
   }
 
   .highlight .nt {
-    color: #22863a; // 綠色用於標籤
+    color: #116329;
   }
 
   .highlight .gi {
-    color: #22863a; // 綠色用於新增
-    background-color: #f0fff4;
+    color: #116329;
+    background-color: #dafbe1;
   }
 
   .highlight .kc {
-    color: #005cc5; // 藍色用於常量
+    color: #0550ae;
   }
 
   .highlight .l,
@@ -233,27 +200,27 @@
   .highlight .il,
   .highlight .mo,
   .highlight .mx {
-    color: #005cc5; // 藍色用於數字
+    color: #0550ae;
   }
 
   .highlight .sb {
-    color: #032f62; // 深藍色用於字符串
+    color: #0550ae;
   }
 
   .highlight .bp {
-    color: #005cc5; // 藍色用於內建
+    color: #0550ae;
   }
 
   .highlight .ne {
-    color: #005cc5; // 藍色
+    color: #0550ae;
   }
 
   .highlight .nl {
-    color: #005cc5; // 藍色
+    color: #0550ae;
   }
 
   .highlight .py {
-    color: #005cc5; // 藍色
+    color: #0550ae;
   }
 
   .highlight .nv,
@@ -261,21 +228,21 @@
   .highlight .vg,
   .highlight .vi,
   .highlight .vm {
-    color: #24292e; // 深灰色用於變量
+    color: #0550ae;
   }
 
   .highlight .o,
   .highlight .ow {
-    color: #24292e; // 深灰色用於運算符
+    color: #0550ae;
   }
 
   .highlight .gh {
-    color: rgb(40, 38, 44);
+    color: #0550ae;
     font-weight: bold;
   }
 
   .highlight .gu {
-    color: rgb(40, 38, 44);
+    color: #0550ae;
     font-weight: bold;
   }
 
@@ -290,21 +257,21 @@
   .highlight .sx,
   .highlight .s1,
   .highlight .ss {
-    color: #032f62; // 深藍色用於字符串
+    color: #0a3069;
   }
 
   .highlight .nd {
-    color: #6f42c1; // 紫色用於裝飾器
+    color: #8250df;
   }
 
   .highlight .nf,
   .highlight .fm {
-    color: #6f42c1; // 紫色用於函數
+    color: #8250df;
   }
 
   .highlight .err {
-    color: rgb(245, 240, 229);
-    background-color: #b31d28;
+    color: #f6f8fa;
+    background-color: #82071e;
   }
 
   .highlight .c,
@@ -315,32 +282,32 @@
   .highlight .cpf,
   .highlight .c1,
   .highlight .cs {
-    color: #6a737d; // 灰色用於註釋
+    color: #68717a;
   }
 
   .highlight .gl {
-    color: rgba(69, 66, 74, 0.7);
+    color: #68717a;
   }
 
   .highlight .gt {
-    color: rgba(69, 66, 74, 0.7);
+    color: #68717a;
   }
 
   .highlight .ni {
-    color: rgb(69, 66, 74);
+    color: #24292f;
   }
 
   .highlight .si {
-    color: rgb(69, 66, 74);
+    color: #24292f;
   }
 
   .highlight .ge {
-    color: rgb(69, 66, 74);
+    color: #24292f;
     font-style: italic;
   }
 
   .highlight .gs {
-    color: rgb(69, 66, 74);
+    color: #24292f;
     font-weight: bold;
   }
-} /* light-syntax */
+}
